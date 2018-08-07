@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="eventsStyles.css" type="text/css">
+  <title>Events
+  </title>
+</head>
+
+<body>
+  <!-- insert navbar/homepage base stuff here -->
+
+  <h1>Events</h1>
+
+<!-- copied -->
+  <button class="tablink" onclick="openPage('Marches', this, 'red')">Marches</button>
+  <button class="tablink" onclick="openPage('Petitions', this, 'green')" id="defaultOpen">Petitions</button>
+  <button class="tablink" onclick="openPage('Other', this, 'blue')">Other</button>
+
+  <div id="Marches" class="tabcontent">
+    <h3>Marches</h3>
+    <p>marches in ur area</p>
+  </div>
+
+  <div id="Petitions" class="tabcontent">
+    <h3>Petitions</h3>
+    <p>petitions to sign</p>
+  </div>
+
+  <div id="Other" class="tabcontent">
+    <h3>Other</h3>
+    <p>other events (speakers, fundraisers)</p>
+  </div>
+
+<!-- end copied -->
+
+<script src="eventsJAVA.js"></script>
+</body>
+
+</html>

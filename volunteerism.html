@@ -1,50 +1,109 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Bonbon" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <style>
     body {
-      background-color: black;
+      background-color: white;
   }
-    h1 {
-      color: #1a51a8;
-      font-size: 250%;
-      text-align: center;
-      font-family: 'Bonbon', cursive;
-    }
+  h1 {
+    font-family:'Oswald', sans-serif;
+    font-size:24px;
+    font-weight:400;
+    text-align: center;
+    /* text-transform: uppercase;  */
+    color:black;
+    padding:0;
+    margin: 10px;;
+    letter-spacing: 3px;
+  }
+  h2 {
+    font-family:'Oswald', sans-serif;
+    font-size:70px;
+    letter-spacing:10px;
+    text-align:center;
+    color:white;
+    font-weight:400;
+    text-transform:uppercase;
+    z-index:10;
+    opacity:.8;}
+  h3 {
+    font-family:'Oswald', sans-serif;
+    font-size:14px;
+    line-height:0;
+    font-weight:400;
+    letter-spacing:8px;
+    text-transform: uppercase;
+    color:black;}
+  p {
+    font-family:'Source Sans Pro', sans-serif;
+    font-weight:400;
+    font-size:14px;
+    line-height:24px;
+    margin: 25px;
+  }
+
     input[type=text] {
       display: block;
-      margin-left: auto;
-      margin-right: auto;
       border: 1px solid #1a51a8;
       border-radius: 15px;
       height: 30px;
       width: 250px;
-
+      text-indent: 10px;
     }
     ::placeholder {
       text-indent: 10px;
     }
+    .NYC {
+      	border-radius: 25px;
+      	margin: 80px;
+      	height: 350px;
+      	/* padding: 70px 0; */
+      	width: 500px;
+      	background-color: #a4def9;
+      	overflow: hidden;
+    }
+    .flex-container {
+    	display: flex;
+    	justify-content: center;
+    	flex-wrap: wrap;
+    }
+    #search {
+      border-radius: 10px;
+      border: 1px solid black;
+      background-color: white;
+
+    }
   </style>
 </head>
 <body>
- 
 
 
-<nav class>
-<ul class="nav">
-	<li><img src="final/logo.png"></li>
-	<li> <a href= "index.html">Home</a></li>
-	<li> <a href= "social.html">Social Awareness</a></li>
-	<li> <a href= "volunteerism.html">Volunteerism</a></li>
-</ul>
-</nav>
+  <h1> VolunteerMe </h1>
 
-<h1> VolunteerMe </h1>
-
-<input type="text" placeholder="Enter your zipcode">
+<div class="flex-container">
+  <input type="text" id="myText" placeholder="Enter your zipcode">
+  <button id="search" type="submit" onclick="myFunction()">Search</button>
+</div>
 
 
-</body>
+  <div class="NYC" id="demo" style="display: none;">
+      <p>HELLO NYC </p>
+  </div>
 
-</html>
+  <script>
+  function myFunction() {
+      var zip = document.getElementById("myText").value;
+      if(zip.substring(0,3)=="100" && zip.length == 5){
+
+        document.getElementById("demo").style.display = "block";
+      }
+  }
+  </script>
+
+
+
+  </body>
+  </html>

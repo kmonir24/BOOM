@@ -3,55 +3,115 @@
   <head>
     <title>Topic of the Week</title>
     <link href="socialStyle.css" rel="stylesheet" type="text/css" />
-  </head>
+<li class="dropdown">
+       <img src="logoTransparent.png" width=30 height=46.5>
+       </div>
+     </li>
 
-  <body>
+
+
+     <ul>
+       <li class="dropdown">
+         <a href="index.html">Home</a>
+       </li>
+
+       <li class="dropdown">
+         <a href="social.html">Social Awareness</a>
+         <div class="dropdown-content">
+           <a href="topicWeek.html">Topic of the Week</a>
+           <a href="quizzesPolls.html">Quizzes and Polls</a>
+           <a href="#">To be determined</a>
+         </div>
+       </li>
+       <li class="dropdown">
+         <a href="javascript:void(0)" class="dropbtn">Get Involved</a>
+         <div class="dropdown-content">
+           <a href="volunteer.html">Volunteerism</a>
+           <a href="events.html">Events</a>
+         </div>
+       </li>
+       <li class="dropdown">
+         <a href="aboutUs.html">About Us</a>
+       </li>
+
+
+     </ul>
     <div class="title">
       <h1>Topic Of The Week</h1>
       <h3>Your Issues. Discussed.</h3>
     </div>
 
-    <center><img src="http://img.picturequotes.com/2/17/16552/ive-never-been-good-at-not-speaking-my-mind-quote-1.jpg" alt="I've never been good at not speaking my mind" height = "400" width="400"></center>
+
+
+    <center><img id = "imgBor" src="http://img.picturequotes.com/2/17/16552/ive-never-been-good-at-not-speaking-my-mind-quote-1.jpg" alt="I've never been good at not speaking my mind" height = "500" width="400" border="10px"></center>
 
   <br>
-  <br> 
+  <br>
+
+  <center><button id = "textButt" onclick="typeWriter()">Click for the Topic Of The Week!</button></center>
+  <center><h4 id= "Topic" ></h4></center>
+
+  <br>
+  <br>
+
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Women')"> Women</button>
+  <button class="btn" onclick="filterSelection('Environment')"> Environment</button>
+  <button class="btn" onclick="filterSelection('Poverty')"> Poverty</button>
+  <button class="btn" onclick="filterSelection('Race')"> Race</button>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://www.freeiconspng.com/uploads/up-arrow-png-8.png" height="20" width="20"></button>
+  
 
   <div class = "flex-container">
-    <div class="card">
-      <center><img src="https://pbs.twimg.com/media/DG95aO7VwAArm69.jpg" style="width:100%"></center>
-      <div class="container">
-        <h1><b>Issue Goes Here</b></h1> 
-        <h3>By Who</h3> 
-        <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
-      </div>
-    </div> 
+      
+      <div class="card filterDiv Women" >
+        <center><img src="https://pbs.twimg.com/media/DG95aO7VwAArm69.jpg" style="width:100%"></center>
+        <div class="cardcontainer">
+          <h1><b>Issue Goes Here</b></h1> 
+          <h3>By Who</h3> 
+          <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
+        </div>
+      </div> 
 
-    <div class="card">
-      <div class="container">
-        <h1><b>Issue Goes Here</b></h1> 
-        <h3>By Who</h3> 
-        <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
-      </div>
-      <center><img src="https://twitter.com/i/status/1026845241960275968" style="width:100%"></center>
-    </div> 
+      <div class="card filterDiv Women" >
+        <div class="cardcontainer">
+          <h1><b>Issue Goes Here</b></h1> 
+          <h3>By Who</h3> 
+          <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
+        </div>
+        <center><img src="https://twitter.com/i/status/1026845241960275968" style="width:100%"></center>
+      </div> 
 
-    <div class="card">
-      <center><img src="https://pbs.twimg.com/media/DG95aO7VwAArm69.jpg" style="width:100%"></center>
-      <div class="container">
-        <h1><b>Issue Goes Here</b></h1> 
-        <h3>By Who</h3> 
-        <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
-      </div>
-    </div> 
-  
-      <div class="card">
-      <center><img src="https://pbs.twimg.com/media/DG95aO7VwAArm69.jpg" style="width:100%"></center>
-      <div class="container">
-        <h1><b>Issue Goes Here</b></h1> 
-        <h3>By Who</h3> 
-        <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
-      </div>
-    </div> 
+      <div class="card filterDiv Environment" >
+        <center><img src="https://pbs.twimg.com/media/DG95aO7VwAArm69.jpg" style="width:100%"></center>
+        <div class="cardcontainer">
+          <h1><b>Issue Goes Here</b></h1> 
+          <h3>By Who</h3> 
+          <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
+        </div>
+      </div> 
+    
+      <div class="card filterDiv Race" >
+        <center><img src="https://pbs.twimg.com/media/DG95aO7VwAArm69.jpg" style="width:100%"></center>
+        <div class="cardcontainer">
+          <h1><b>Issue Goes Here</b></h1> 
+          <h3>By Who</h3> 
+          <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
+        </div>
+      </div> 
+
+      <div class="card filterDiv Race" >
+        <center><img src="https://pbs.twimg.com/media/DG95aO7VwAArm69.jpg" style="width:100%"></center>
+        <div class="cardcontainer">
+          <h1><b>Issue Goes Here</b></h1> 
+          <h3>By Who</h3> 
+          <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
+        </div>
+      </div> 
   </div>
   
 
@@ -63,6 +123,6 @@
 
 
     
-  <script src="index.js"></script>
+  <script src="socialTopic.js"></script>
   </body>
 </html>

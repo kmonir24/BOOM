@@ -39,6 +39,37 @@ body, html {
 #Other {background-color: white;}
 
 /* end copied */
+/* button styling */
+.container {
+  overflow: hidden;
+}
+
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* .buttons {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: pink;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ededed;
+} */
+
+.button.active {
+  background-color: black;
+  color: white;
+}
+
+/* end button styling */
 
 
  .card {
@@ -46,6 +77,7 @@ body, html {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     transition: 0.3s;
     width: 50%;
+    visibility: visible;
 
 }
 
@@ -54,9 +86,23 @@ body, html {
     box-shadow: 0 8px 16px 0 rgba(1,1,1,1);
 }
 
+.cardH {
+   /* Add shadows to create the "card" effect */
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+   transition: 0.3s;
+   width: 50%;
+   /* visibility:hidden; */
+
+}
+
 /* Add some padding inside the card container */
 .cardcontainer {
     padding: 2px 16px;
+    visibility:visible;
+}
+.cardcontainerH {
+    padding: 2px 16px;
+    visibility:hidden;
 }
 
 .flex-container {

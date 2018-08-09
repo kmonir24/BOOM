@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,26 +43,29 @@
     line-height:24px;
     margin: 25px;
   }
-
     input[type=text] {
       display: block;
-      border: 1px solid #1a51a8;
+      border: 1px solid black;
       border-radius: 15px;
       height: 30px;
       width: 250px;
       text-indent: 10px;
+      margin-bottom: 50px;
+
     }
     ::placeholder {
       text-indent: 10px;
     }
-    .NYC {
-      	border-radius: 25px;
-      	margin: 80px;
+    .jerseyCity {
+      	/* border-radius: 25px; */
+      	margin: 25px;
       	height: 350px;
       	/* padding: 70px 0; */
       	width: 500px;
-      	background-color: #a4def9;
+      	background-color: white;
       	overflow: hidden;
+        border: 5px inset black;
+
     }
     .flex-container {
     	display: flex;
@@ -73,34 +75,64 @@
     #search {
       border-radius: 10px;
       border: 1px solid black;
+      background-color: black;
+      color: white;
+      margin-bottom: 50px;
+    }
+    #search:hover {
       background-color: white;
-
+      color: black;
     }
      .title {
-       background: white; 
-       padding: 60px; 
-       margin:0 auto; 
+       background: white;
+       padding: 60px;
+       margin:0 auto;
        text-align:center;
     }
-
      .title h1 {
-       font-size: 35px; 
+       font-size: 35px;
        letter-spacing: 8px;
     }
     #parallax-scroll .parallax-one {
       padding-top: 100px;
-      padding-bottom: 100px; 
-      overflow: hidden; 
-      position: relative; 
-      width: 100%; 
+      padding-bottom: 100px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
       background-image: url("https://chopra.com/sites/default/files/field/image/Volunteers.jpg");
-      background-attachment: fixed; 
-      background-size: cover; 
-      -moz-background-size: cover; 
-      -webkit-background-size: cover; 
-      background-repeat: no-repeat; 
+      background-attachment: fixed;
+      background-size: cover;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+      background-repeat: no-repeat;
       background-position: top center;}
-    
+
+    #volunteer {
+      margin-top: 50px;
+    }
+.jerseyCity h1 {
+    color: grey;
+    text-indent: 20px;
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+.jerseyCity p {
+    font-size: 15px;
+}
+.address {
+    font-size: 13px;
+    text-decoration: underline;
+    color: black;
+}
+.location {
+    display: block;
+    height: 160px;
+    width: 175px;
+    margin: auto;
+
+
+}
   </style>
 </head>
 <body>
@@ -145,26 +177,42 @@
       <h2>How can you get more involved in your community?</h2>
     </div>
 </section>
-    
 
-  <h1> VolunteerMe </h1>
+
+  <h1 id="volunteer"> VolunteerMe </h1>
 
 <div class="flex-container">
   <input type="text" id="myText" placeholder="Enter your zipcode">
   <button id="search" type="submit" onclick="myFunction()">Search</button>
 </div>
 
-
-  <div class="NYC" id="demo" style="display: none;">
+<div class="flex-container">
+  <div class="jerseyCity" style="display: none;">
+      <h1>City Line Church Food Pantry </h1>
+      <p> The City Line Chruch Food Pantry serves senior citizens and families with small children in need. They need volunteers every second and fourth saturday of every month, from 9 AM to 2 PM. You can contact them at (201) 332-0970 </p>
+      <p> <a class="address" href="https://www.google.com/maps/place/1560+John+Fitzgerald+Kennedy+Blvd,+Jersey+City,+NJ+07305/@40.6948016,-74.1015272,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2510ad7221d51:0xc5ee186e530d6e36!8m2!3d40.6947976!4d-74.0993385" target="_blank"> 1510 John Fitzgerald Kennedy Blvd, Jersey City, NJ 07305 </a></p>
+      <img class="location" src="CityLineChurch.png">
+  </div>
+  <div class="jerseyCity" style="display: none;">
       <p>HELLO NYC </p>
   </div>
+  <div class="jerseyCity" style="display: none;">
+      <p>HELLO NYC </p>
+  </div>
+</div>
 
   <script>
   function myFunction() {
       var zip = document.getElementById("myText").value;
-      if(zip.substring(0,3)=="100" && zip.length == 5){
+      if(zip.substring(0,3)=="073" && zip.length == 5){
 
-        document.getElementById("demo").style.display = "block";
+        var x =   document.getElementsByClassName("jerseyCity");
+        var i;
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "block";
+        }
+        // document.getElementById("demo").style.display = "block";
+
       }
   }
   </script>

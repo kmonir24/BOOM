@@ -1,11 +1,11 @@
 /* start copied */
-
-
+/* @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700); */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 /*Set height of body and the document to 100% to enable "full page tabs" */
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Arial;
+  /* font-family: 'Oswald'; */
 }
 
 /* Style tab links */
@@ -41,13 +41,7 @@ body, html {
 /* end copied */
 
 
-
-
-
-
-@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
-
-.card {
+ .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     transition: 0.3s;
@@ -61,16 +55,44 @@ body, html {
 }
 
 /* Add some padding inside the card container */
-.container {
+.cardcontainer {
     padding: 2px 16px;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
- h1 {font-family:'Oswald', sans-serif; font-size:24px; font-weight:400;text-align: center; text-transform: uppercase; color:black; padding:0; margin:0;}
+
+
+ h1 {
+      font-family:'Oswald', sans-serif;
+      font-size:24px;
+      font-weight:400;
+      text-align: center;
+      text-transform: uppercase;
+      color:black;
+      padding:0;
+      margin:0;
+    }
  h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.8;}
- h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;}
- p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px;}
+ h3 {font-family:'Oswald', sans-serif;
+      font-size:14px;
+      line-height:0;
+      font-weight:400;
+      letter-spacing:8px;
+      text-transform: uppercase;
+      color:black;}
+ p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px; color: black;}
 .first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+
+#topofpage {
+  font-family: 'Oswald', sans-serif;
+  font-weight:400;
+  text-transform: uppercase;
+}
 
 
  .title {background: white; padding: 60px; margin:0 auto; text-align:center;}
@@ -86,6 +108,7 @@ body, html {
 /* Section - Parallax */
 /**************************/
 #parallax-scroll .parallax-one {padding-top: 100px; padding-bottom: 100px; overflow: hidden; position: relative; width: 100%; background-image: url("https://d15gqlu8dfiqiu.cloudfront.net/s3fs-public/styles/banner/public/images/chapters/new_york_background.jpg"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+
 /* #parallax-scroll .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url("https://i.ytimg.com/vi/162VzSzzoPs/maxresdefault.jpg"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
 #parallax-scroll .parallax-three {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url("http://www.jotscroll.com/images/forums-posts-images/1511469526-Global-warming--causes--effects-and--solutions-1.jpg"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;} */
 
@@ -108,4 +131,58 @@ body, html {
   padding: 30px 15px;
   width:290px;
   }
+}
+
+
+
+/*navbar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }

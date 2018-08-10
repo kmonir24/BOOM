@@ -102,7 +102,7 @@
   
   // Creates a list of the answer choices as radio inputs
   function createRadios(index) {
-    var radioList = $('<li>');
+    var radioList = $('<ul>');
     var item;
     var input = '';
     for (var i = 0; i < questions[index].choices.length; i++) {

@@ -219,6 +219,7 @@ li.dropdown {
 }
 
 .dropdown-content {
+    font-family: 'Oswald';
     display: none;
     position: absolute;
     background-color: #f9f9f9;

@@ -2,13 +2,14 @@
 <html>
   <head>
     <title>Quizzes and Polls</title>
-    <link href="socialStyle.css" rel="stylesheet" type="text/css" />
+    <link href="quizstyle.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
 
        <li class="dropdown">
-           <img src="logoTransparent.png" width = "40 px" height = "52 px">
+           <img src="logoTransparent.png" width="40 px" height="52">
+           </div>
          </li>
 
 
@@ -36,18 +37,36 @@
            <li class="dropdown">
              <a href="aboutUs.html">About Us</a>
            </li>
-
-
          </ul>
+
+
     <div class="title">
       <h1>Quizzes and Polls</h1>
       <h3>Have a little fun. Learn a little too.</h3>
     </div>
 
+		<div id='container'>
+			<div id ='title'>
+				<h1>Test your knowledge about Global Warming!</h1>
+			</div>
+   			<br/>
+  			<div id='quiz'></div>
+    		<div class='button' id='next'><a href='#'>Next</a></div>
+    		<div class='button' id='prev'><a href='#'>Prev</a></div>
+    		<div class='button' id='start'> <a href='#'>Start Over</a></div>
+    		<!-- <button class='' id='next'>Next</a></button>
+    		<button class='' id='prev'>Prev</a></button>
+    		<button class='' id='start'> Start Over</a></button> -->
+    	</div>
+      
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+		<script type="text/javascript" src='questions.json'></script>
+		
 
 
 
 
-  <script src="socialJava.js"></script>
+
+  <script type = 'text/javascript' src="quizJava.js"></script>
   </body>
 </html>

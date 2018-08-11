@@ -5,19 +5,7 @@
       <title>Events</title>
     <link href="eventsStyles.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  <!-- <style>
-
-   h1 {
-        font-family:"Oswald", sans-serif;
-        font-size:24px;
-        font-weight:400;
-        text-align: center;
-        /* text-transform: uppercase; */
-        color:black;
-        padding:0;
-        margin:0;
-      }
-  </style> -->
+  
 
   </head>
 
@@ -78,79 +66,97 @@
 
 <div id="Marches" class="tabcontent">
   <h3>Marches</h3>
-  <p>marches in ur area</p>
+  <p>Find marches in the Tri-State Area</p>
+<!-- march buttons -->
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> All</button>
+    <button class="btn" onclick="filterSelection('ny')"> New York</button>
+    <button class="btn" onclick="filterSelection('nj')"> New Jersey</button>
+    <button class="btn" onclick="filterSelection('ct')"> Connecticut</button>
 </div>
 
+<!-- first march -->
+<div class="flex-container">
+    <div class="card filterDiv all ny">
+    <center><img src="https://i2.wp.com/www.washtenawvoice.com/wp-content/uploads/2017/01/march.png?resize=542%2C409&ssl=1" style="width:90%"></center>
+       <div class="cardcontainer">
+         <h1><b>March Name</b></h1>
+         <h3><center>Date</center></h3>
+         <h3><center>Location</center></h3>
+         <p>march description</p>
+         <h3><center><a href="">CLICK FOR MORE INFORMATION</a></center></h3>
+       </div>
+   </div>
+  
+  <!-- second march -->
+  <div class="card filterDiv all ny">
+    <center><img src="https://i2.wp.com/www.washtenawvoice.com/wp-content/uploads/2017/01/march.png?resize=542%2C409&ssl=1" style="width:90%"></center>
+       <div class="cardcontainer">
+         <h1><b>March Name</b></h1>
+         <h3><center>Date</center></h3>
+         <h3><center>Location</center></h3>
+         <p>march description</p>
+         <h3><center><a href="">CLICK FOR MORE INFORMATION</a></center></h3>
+       </div>
+  </div>
+
+  <!-- third march -->
+  <div class="card filterDiv all nj">
+    <center><img src="https://i2.wp.com/www.washtenawvoice.com/wp-content/uploads/2017/01/march.png?resize=542%2C409&ssl=1" style="width:90%"></center>
+       <div class="cardcontainer">
+         <h1><b>March Name</b></h1>
+         <h3><center>Date</center></h3>
+         <h3><center>Location</center></h3>
+         <p>march description</p>
+         <h3><center><a href="">CLICK FOR MORE INFORMATION</a></center></h3>
+       </div>
+  </div>
+
+  <!-- fourth march -->
+  <div class="card filterDiv all nj">
+    <center><img src="https://i2.wp.com/www.washtenawvoice.com/wp-content/uploads/2017/01/march.png?resize=542%2C409&ssl=1" style="width:90%"></center>
+       <div class="cardcontainer">
+         <h1><b>March Name</b></h1>
+         <h3><center>Date</center></h3>
+         <h3><center>Location</center></h3>
+         <p>march description</p>
+         <h3><center><a href="">CLICK FOR MORE INFORMATION</a></center></h3>
+       </div>
+  </div>
+
+  <!-- fifth march -->
+  <div class="card filterDiv all ct">
+    <center><img src="https://i2.wp.com/www.washtenawvoice.com/wp-content/uploads/2017/01/march.png?resize=542%2C409&ssl=1" style="width:90%"></center>
+       <div class="cardcontainer">
+         <h1><b>March Name</b></h1>
+         <h3><center>Date</center></h3>
+         <h3><center>Location</center></h3>
+         <p>march description</p>
+         <h3><center><a href="">CLICK FOR MORE INFORMATION</a></center></h3>
+       </div>
+  </div>
+
+  <!-- sixth march -->
+  <div class="card filterDiv all ct">
+    <center><img src="https://i2.wp.com/www.washtenawvoice.com/wp-content/uploads/2017/01/march.png?resize=542%2C409&ssl=1" style="width:90%"></center>
+       <div class="cardcontainer">
+         <h1><b>March Name</b></h1>
+         <h3><center>Date</center></h3>
+         <h3><center>Location</center></h3>
+         <p>march description</p>
+         <h3><center><a href="">CLICK FOR MORE INFORMATION</a></center></h3>
+       </div>
+  </div>
+</div>
+
+</div>
+<!-- END MARCHES -->
+
+<!-- PETITIONS -->
 <div id="Petitions" class="tabcontent">
   <h3>Petitions</h3>
   <!-- <p>Editor's Picks</p> -->
 
-
-<!-- CARDS FROM JAIDAH'S CODE -->
-<!-- <div class = "flex-container">
- <div class="card">
-   <center><img src="https://purepng.com/public/uploads/large/purepng.com-eaglebirdsflyanimals-631522936787gghpi.png" style="width:90%"></center>
-   <div class="cardcontainer">
-     <h1><b>Fight for the Endangered Species Act</b></h1>
-     <h3><center><a href="https://www.change.org/p/u-s-house-of-representatives-fight-for-the-endangered-species-act-bd8671a9-0fbb-4aab-ad66-5e9221884c83">CLICK TO SIGN</a></center></h3>
-     <p>"Trump's proposal will scale back critical protections for species listed as threatened. It will make protecting new species under the Act even more challenging. It will remove language that ensures wildlife protection is prioritized over profits-- a give-away to greedy corporations that view our public lands and waters as profit centers." <i>-Change.org</i></p>
-   </div>
- </div> -->
-
- <!-- <div class="card">
-   <center><img src="http://www.themainewire.com/wp-content/uploads/2014/02/collins.png" style="width:90%"></center>
-   <div class="cardcontainer">
-     <h1><b>Tell Susan Collins to Save Reproductive Rights</b></h1>
-     <h3><center><a href="https://www.change.org/p/tell-susan-collins-to-save-reproductive-rights">CLICK TO SIGN</a><center></h3>
-     <p>We are facing the most serious threat to abortion rights in 45 years.
-
-With the retirement of Supreme Court Justice Anthony Kennedy, President Trump has fulfilled his campaign promise to nominate a highly conservative judge who could overturn Roe v. Wade by nominating Judge Brett Kavanaugh. His nomination could give states the right to outlaw abortion -- ending the right to safe and legal abortion for women across the country. As a mother of two, I had the right and privilege to choose the size and timing of my family; it terrifies me that my sons, nieces, and nephews may not have the same.
-
-But there's still a chance to protect reproductive rights. My senator, Republican Senator Susan Collins, could have the deciding vote on Judge Kavanaugh’s nomination for the court – will you join me in asking her to reject his nomination? <i>-Abby King</i></p>
-   </div>
- </div> -->
-
- <!-- <div class="card">
-   <center><img src="https://lh3.googleusercontent.com/oWOSHObJ_dNjGOhvFIAqQMA1BZAK7Y8SFBJsBPNX3_qOEbWJiNgjG5BXVGZYt-UW8YM=w720-h310" style="width:80%"></center>
-   <div class="cardcontainer">
-     <h1><b>Save Net Neutrality</b></h1>
-      <h3><center><a href="https://www.change.org/p/save-net-neutrality-netneutrality">CLICK TO SIGN</a><center></h3>
-     <p>In December of 2017, the Federal Communications Commission (FCC) voted 3-2 to repeal net neutrality rules -- giving big cable companies room to charge extra fees, block and censor users. By removing ISPs from Title II of the Communications Act, a rule that means ISPs are subjected to tougher regulations that prevent them blocking sites, creating paid "fast" lanes, and throttling internet speeds. This decision will have global implications for the way the world shares and receives information from journalists, newsrooms, and NGOs. <i>-Change.org</i></p>
-   </div>
- </div> -->
-
-   <!-- <div class="card">
-   <center><img src="https://media.treehugger.com/assets/images/2016/06/dengue-mosquito.jpg.860x0_q70_crop-scale.jpg" style="width:100%"></center>
-   <div class="cardcontainer">
-     <h1><b>Tell the EPA NO Genetically Modified Mosquitoes!</b></h1>
-     <h3><center><a href="https://www.change.org/p/tell-the-epa-no-to-gmo-mosquitoes">CLICK TO SIGN</a><center></h3>
-     <p>Right now, a British company named Oxitec is planning to release genetically modified mosquitoes into the fragile enviroment of the Florida Keys and Texas. The company wants to use the Florida Keys and Texas  as a testing ground for these mutant bugs. Even though the local community in the Florida Keys has spoken -- we even passed an ordinance demanding more testing -- First ,  Oxitec is trying to use a loophole by applying to the FDA for an "animal bug" patent. Now, the hot potato has passed to the EPA and  Oxitec is at it again. This profit driven biotech company wants to release more than 50 million GMO mosquitoes per week into Florida and Texas. These GMO mosquitoes could pose major risks to fragile ecosystems like the Florida Keys  and Texas and may pose risks to public health and safety. <i>-Mila de Mier</i></p>
-   </div>
- </div> -->
-
- <!-- <div id="mybuttoncontainer">
-   <center>
-     <button type="button" onclick="showContent()">SHOW MORE</button>
-   </center>
- </div> -->
-<!-- new page petitions -->
-<!-- <div id = "show1" class="cardH filterDiv browsemore">
-<center><img src="https://pbs.twimg.com/media/DG95aO7VwAArm69.jpg" style="width:100%"></center>
-<div class="cardcontainerH">
-  <h1><b>Issue Goes Here</b></h1>
-  <h3>By Who</h3>
-  <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
-</div>
-</div>
-
-<div id="show2" class="cardH filterDiv browsemore">
-<center><img src="https://pbs.twimg.com/media/DG95aO7VwAArm69.jpg" style="width:100%"></center>
-<div class="cardcontainerH">
-  <h1><b>Issue Goes Here</b></h1>
-  <h3>By Who</h3>
-  <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
-</div>
-</div> -->
 
 <!-- Control buttons -->
 <div id="myBtnContainer">
@@ -238,6 +244,8 @@ That was in 2017. On Sunday, April 29, 2018, Noura was found guilty in court of 
 <center><form action="https://www.change.org/petitions">
     <input id="clickOut" type="submit" value="Browse More">
   </form></center>
+</div>
+<!-- END PETITIONS -->
 
 <div id="Other" class="tabcontent">
   <h3>Other</h3>

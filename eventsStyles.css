@@ -71,7 +71,7 @@ body, html {
 /* Add a dark background to the active button */
 .btn.active {
   background-color: #666;
-  color: white;
+  /* color: white; */
 }
 
 /* end button styling */
@@ -212,7 +212,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: rgb(226, 226, 226);
 }
 
 li.dropdown {

@@ -144,8 +144,8 @@
 <body>
 
  <li class="dropdown">
-     <img src="logoTransparent.png" width=40 height=52>
-    
+     <img src="logoTransparent.PNG" width=40 height=52>
+
   </li>
 
 
@@ -197,7 +197,7 @@
 
 <div class="flex-container">
   <input type="text" id="myText" placeholder="Enter your zipcode">
-  <button id="search" type="submit" onclick="myFunction()">Search</button>
+  <button id="search" type="submit" onclick="myFunction(); scroll_down();">Search</button>
 </div>
 
 <div class="flex-container">
@@ -335,6 +335,9 @@
             }
           }
         }
+    function scroll_down {
+      windows.scrollBy(0, 100);
+      }
     }
   </script>
 

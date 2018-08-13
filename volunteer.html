@@ -64,7 +64,9 @@
       	width: 450px;
       	background-color: white;
       	overflow: hidden;
-        border: 5px inset black;
+        border: 5px outset black;
+        /* background: grey;
+        background: rgb(128,128,128,0.1) */
 
     }
     .flex-container {
@@ -110,19 +112,19 @@
     #volunteer {
       margin-top: 50px;
     }
-.Jersey1 h1 {
+.flex-container h1 {
     color: grey;
-    text-indent: 20px;
+    margin-left: 25px;
     font-size: 25px;
     text-align: left;
     margin-bottom: 25px;
 }
-.Jersey1 p {
-    font-size: 13px;
+.flex-container p {
+    font-size: 15px;
     margin: 25px;
 }
 .address {
-    font-size: 10px;
+    font-size: 13px;
     text-decoration: underline;
     color: black;
     display: block;
@@ -133,8 +135,8 @@
 }
 .location {
     display: block;
-    height: 35%;
-    width: 35%;
+    height: 40%;
+    width: 40%;
     margin: auto;
 
 
@@ -197,7 +199,7 @@
 
 <div class="flex-container">
   <input type="text" id="myText" placeholder="Enter your zipcode">
-  <button id="search" type="submit" onclick="myFunction(); scroll_down();">Search</button>
+  <button id="search" type="submit" onclick="Hide(); myFunction(); scroll_down();">Search</button>
 </div>
 
 <div class="flex-container">
@@ -218,8 +220,8 @@
         <p> The City Line Chruch Food Pantry serves senior citizens and families with small children in need. They need volunteers every second and fourth saturday of every month, from 9 AM to 2 PM. You can contact them at (201) 332-0970. </p>
         <p> <a class="address" href="https://www.google.com/maps/place/1560+John+Fitzgerald+Kennedy+Blvd,+Jersey+City,+NJ+07305/@40.6948016,-74.1015272,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2510ad7221d51:0xc5ee186e530d6e36!8m2!3d40.6947976!4d-74.0993385" target="_blank"> 1510 John Fitzgerald Kennedy Blvd, Jersey City, NJ 07305 </a></p>
         <img class="location" src="CityLineChurch.PNG">
-      </div>
-    <div class="Jersey4" style="display: none;">
+      </div> 
+     <div class="Jersey4" style="display: none;">
         <h1>City Line Church Food Pantry </h1>
         <p> The City Line Chruch Food Pantry serves senior citizens and families with small children in need. They need volunteers every second and fourth saturday of every month, from 9 AM to 2 PM. You can contact them at (201) 332-0970. </p>
         <p> <a class="address" href="https://www.google.com/maps/place/1560+John+Fitzgerald+Kennedy+Blvd,+Jersey+City,+NJ+07305/@40.6948016,-74.1015272,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2510ad7221d51:0xc5ee186e530d6e36!8m2!3d40.6947976!4d-74.0993385" target="_blank"> 1510 John Fitzgerald Kennedy Blvd, Jersey City, NJ 07305 </a></p>
@@ -231,13 +233,19 @@
 
 
     <div class="NY1" style="display: none;">
-        <h1>City Line Church Food Pantry </h1>
-        <p> The City Line Chruch Food Pantry serves senior citizens and families with small children in need. They need volunteers every second and fourth saturday of every month, from 9 AM to 2 PM. You can contact them at (201) 332-0970. </p>
-        <p> <a class="address" href="https://www.google.com/maps/place/1560+John+Fitzgerald+Kennedy+Blvd,+Jersey+City,+NJ+07305/@40.6948016,-74.1015272,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2510ad7221d51:0xc5ee186e530d6e36!8m2!3d40.6947976!4d-74.0993385" target="_blank"> 1510 John Fitzgerald Kennedy Blvd, Jersey City, NJ 07305 </a></p>
-        <img class="location" src="CityLineChurch.PNG">
+        <h1>Cabrini Immigrant Service NYC </h1>
+        <p> The Cabrini Immigrant Service hosts a food pantry every Monday and Tuesday from 9:30AM - 12:30PM. They are looking for volunteers to set up, run and clean up. If interested, contact Frannie Skardon at 212-791-4590. <p>
+        <p> <a class="address" href="https://www.google.com/maps?q=139+Henry+Street,+N.Y.C.,+NY+10002" target="_blank"> 139 Henry Street, N.Y.C., NY 10002 </a></p>
+        <img class="location" src="CabriniFoodPantry.PNG">
       </div>
+      <div class="NY1" style="display: none;">
+          <h1>Henry Street Settlement </h1>
+          <p> Volunteer with the Henry Street Settlement and tend to the gardens. They need volunteers to water, clean, and weed the gardens. Sign up by contacting John Toribio-Perez at 212-766-9200<p>
+          <p> <a class="address" href="https://www.google.com/maps?q=265+Henry+Street,+New+York,+NY+11421" target="_blank">265 Henry Street New York, NY 11421</a></p>
+          <img class="location" src="HenryStreetSettlement.PNG">
+        </div>
 
-    <div class="NY2" style="display: none;">
+     <div class="NY2" style="display: none;">
         <h1>City Line Church Food Pantry </h1>
         <p> The City Line Chruch Food Pantry serves senior citizens and families with small children in need. They need volunteers every second and fourth saturday of every month, from 9 AM to 2 PM. You can contact them at (201) 332-0970. </p>
         <p> <a class="address" href="https://www.google.com/maps/place/1560+John+Fitzgerald+Kennedy+Blvd,+Jersey+City,+NJ+07305/@40.6948016,-74.1015272,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2510ad7221d51:0xc5ee186e530d6e36!8m2!3d40.6947976!4d-74.0993385" target="_blank"> 1510 John Fitzgerald Kennedy Blvd, Jersey City, NJ 07305 </a></p>
@@ -245,11 +253,17 @@
       </div>
 
     <div class="NY3" style="display: none;">
-        <h1>City Line Church Food Pantry </h1>
-        <p> The City Line Chruch Food Pantry serves senior citizens and families with small children in need. They need volunteers every second and fourth saturday of every month, from 9 AM to 2 PM. You can contact them at (201) 332-0970. </p>
-        <p> <a class="address" href="https://www.google.com/maps/place/1560+John+Fitzgerald+Kennedy+Blvd,+Jersey+City,+NJ+07305/@40.6948016,-74.1015272,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2510ad7221d51:0xc5ee186e530d6e36!8m2!3d40.6947976!4d-74.0993385" target="_blank"> 1510 John Fitzgerald Kennedy Blvd, Jersey City, NJ 07305 </a></p>
-        <img class="location" src="CityLineChurch.PNG">
+        <h1>Calvary St Andrews Food Pantry</h1>
+        <p> The Food Pantry runs Monday - Friday and is run soley by volunteers. If interested, you can sign up by calling 585 325-4950, or by emailing calvarystandrews@gmail.com </p>
+        <p> <a class="address" href="https://www.google.com/maps/place/68+Ashland+St,+Rochester,+NY+14620/@40.6928987,-73.9815901,17z/data=!4m5!3m4!1s0x89d6b4e29a8ed815:0xa433cd42de2420c0!8m2!3d43.1436832!4d-77.6083684" target="_blank">68 Ashland St, Rochester, NY 14620</a></p>
+        <img class="location" src="CalvaryStAndrews.PNG">
       </div>
+      <div class="NY3" style="display: none;">
+          <h1> Humane Soceity of Greater Rochester</h1>
+          <p> Volunteer at Lollypop Farm to help amazing pets find homes. You can be a foster carer for a short period of time, or help out around the shelter. Contact the Volunteer Manager at (585) 223-1330. </p>
+          <p> <a class="address" href="https://www.google.com/maps/place/99+Victor+Rd,+Fairport,+NY+14450/@43.0609953,-77.4008843,17z/data=!3m1!4b1!4m5!3m4!1s0x89d1328b67394f1d:0xf47008a1396fe577!8m2!3d43.0609953!4d-77.3986956" target="_blank">99 Victor Road Fairport, NY 14450 </a></p>
+          <img class="location" src="LollyPopFarm.PNG">
+        </div>
 
 
 
@@ -290,7 +304,7 @@
           }
 
           else if((zip.substring(0,3)>="080")&&(zip.substring(0,3)<="084")){
-            var x =   document.getElementsByClassName("Jersey3");
+            var x = document.getElementsByClassName("Jersey3");
             var i;
             for (i = 0; i < x.length; i++) {
               x[i].style.display = "block";
@@ -335,10 +349,58 @@
             }
           }
         }
-    function scroll_down {
-      windows.scrollBy(0, 100);
-      }
     }
+  function scroll_down() {
+      window.scrollBy(0, 500);
+      }
+
+  function Hide() {
+    var x = document.getElementsByClassName("Jersey1");
+    var y = document.getElementsByClassName("Jersey2");
+    var z = document.getElementsByClassName("Jersey3");
+    var a = document.getElementsByClassName("Jersey4");
+    var b = document.getElementsByClassName("NY1");
+    var c = document.getElementsByClassName("NY2");
+    var d = document.getElementsByClassName("NY3");
+    var e = document.getElementsByClassName("connecticut");
+    var i;
+
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+
+    for (i = 0; i < y.length; i++) {
+      y[i].style.display = "none";
+    }
+
+    for (i = 0; i < z.length; i++) {
+      z[i].style.display = "none";
+    }
+
+    for (i = 0; i < a.length; i++) {
+      a[i].style.display = "none";
+    }
+
+    for (i = 0; i < b.length; i++) {
+      b[i].style.display = "none";
+    }
+
+    for (i = 0; i < c.length; i++) {
+      c[i].style.display = "none";
+    }
+
+
+    for (i = 0; i < d.length; i++) {
+      d[i].style.display = "none";
+    }
+
+    for (i = 0; i < e.length; i++) {
+      e[i].style.display = "none";
+    }
+
+
+
+  }
   </script>
 
 

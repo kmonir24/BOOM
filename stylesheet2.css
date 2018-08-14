@@ -162,3 +162,7 @@ li.dropdown {
 section{
   font-family: 'Oswald', sans-serif;
 }
+
+.text-blocks p {
+   text-indent: 25px;
+}

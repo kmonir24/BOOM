@@ -72,7 +72,7 @@ opacity: 1;
   color: white;
   font-family: 'Oswald', sans-serif;
   font-size: 26px;
-  padding: 16px 32px;
+  text-transform: uppercase;
 }
 
 
@@ -160,6 +160,4 @@ li.dropdown {
 section{
   font-family: 'Oswald', sans-serif;
 }
-.text {
-  text-transform: uppercase;
-}
+

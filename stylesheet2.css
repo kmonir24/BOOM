@@ -112,12 +112,12 @@ ul {
 }
 
 li {
-    font-family: 'Oswald';
     float: left;
 }
 
 li a, .dropbtn {
     display: inline-block;
+    font-family: 'Oswald';
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -143,6 +143,7 @@ li.dropdown {
 }
 
 .dropdown-content a {
+    font-family: 'Oswald';
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -150,7 +151,7 @@ li.dropdown {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #f1f1f1;}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -158,3 +159,4 @@ li.dropdown {
 
 section{
   font-family: 'Oswald', sans-serif;
+}

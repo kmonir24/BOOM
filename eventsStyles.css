@@ -1,5 +1,4 @@
 /* start copied */
-/* @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700); */
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 /*Set height of body and the document to 100% to enable "full page tabs" */
 body, html {
@@ -11,7 +10,7 @@ body, html {
 /* Style tab links */
 .tablink {
   background-color: #fcc288;
-  color: black;
+  color: rgb(99, 45, 10);
   float: left;
   border: none;
   outline: none;
@@ -19,6 +18,8 @@ body, html {
   padding: 14px 16px;
   font-size: 17px;
   width: 33.333%;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
 }
 
 
@@ -163,9 +164,6 @@ body, html {
 /**************************/
 #parallax-scroll .parallax-one {padding-top: 100px; padding-bottom: 100px; overflow: hidden; position: relative; width: 100%; background-image: url("https://d15gqlu8dfiqiu.cloudfront.net/s3fs-public/styles/banner/public/images/chapters/new_york_background.jpg"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
 
-/* #parallax-scroll .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url("https://i.ytimg.com/vi/162VzSzzoPs/maxresdefault.jpg"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
-#parallax-scroll .parallax-three {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url("http://www.jotscroll.com/images/forums-posts-images/1511469526-Global-warming--causes--effects-and--solutions-1.jpg"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;} */
-
 /* Extras */
 #parallax-scroll .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
 
@@ -212,7 +210,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(65, 65, 65);
 }
 
 li.dropdown {
@@ -253,4 +251,47 @@ li.dropdown {
 }
 #Oswald {
   font-family: "Oswald," sans-serif;
+}
+
+/* collapsible styling */
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active1, .collapsible:hover {
+  background-color: rgb(165, 165, 165);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: rgb(250, 250, 250);
+}
+
+/* plus/minus stuff */
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active1:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }

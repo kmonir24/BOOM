@@ -160,3 +160,6 @@ li.dropdown {
 section{
   font-family: 'Oswald', sans-serif;
 }
+.text {
+  text-transform: uppercase;
+}

@@ -58,7 +58,7 @@ opacity: 1;
   -ms-transform: translate(-50%, -50%);
   padding-top: 170px;
   text-align: center;
-  font-weight: 300;
+  font-weight: lighter;
 }
 
 .container:hover .parallax-two {

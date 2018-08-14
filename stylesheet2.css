@@ -38,9 +38,44 @@
 
 /* Section - Parallax */
 /**************************/
-#parallax-scroll .parallax-one {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url("https://www.hks.harvard.edu/sites/default/files/Topic%20Pages/Poverty%2C%20Inequality/1_poverty_hands_istock614211908.jpg"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
-#parallax-scroll .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url("https://st.depositphotos.com/1018174/1388/i/950/depositphotos_13884341-stock-photo-four-girls-enjoying-the-meeting.jpg"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
-#parallax-scroll .parallax-three {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url("https://thewallpaper.co/wp-content/uploads/2016/10/Melting-Ice-Floe-Arctic-Sea-Image-hd-background-wallpapers-free-amazing-tablet-smart-phone-4k-high-definition-3840x2160.jpg"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-scroll .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url("https://lh3.googleusercontent.com/5dctFe_u7URjw7lK0wU3QkiPJiyNQPGR-rMwkt8t4pYT1aMZ_XoDiK9i0i7xHbm08_5sELdqR2tvjEux84JxSEtgxAdu5xQVdIdqSRwUNmVSmwPKI22fjrZYQfdLp22pAwX1OTyq9xE3x24EX4f655kLsEB2SItO119lF1SSE-cWytqOBDtWzgLV3PRx5WWMlFMcZDkFdeOMB7OwdrO25aQ460OiZRqZvQNbHVR7OJkHyMUGJX1MBo6inHDcgj4Pk3Feza339kQq-pd5HFdzBW88PkxCtWKcpPm13Dz0UQAfxPN6FAP9wOnL1AUsbGiDdApJzdfefOX36PqVhlo8zdejcAgSKeNDuvajjBD0o0S_wMRlUA69iWaW2QOua5tg8hQqjU0KXFqGoMIuAe2B0Zp8PFhsOmhRo8-1Nv2cRNqw3DlnsqTVatdfj0kV8k7jL28UT9NQGNQqoV2LwgZGUIVwXUl3LTz7PntG6ruGtrSd9oMcXfxz61EwdtBW-hN32Ws3B8IWNIQ1F6gSis0EdJD4p3s8NggDOVNP8gy0YPtW9FeudF2mnNewSQIh2TGd9oBvJ-k80BEPugEnsg3msc-ybz1qqKFuBTub5w=w1224-h918-no"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+
+.parallax-two{
+opacity: 1;
+ display: block;
+ width: 100%;
+ height: auto;
+ transition: .5s ease;
+ backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .parallax-two {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #gray;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 26px;
+  padding: 16px 32px;
+}
+
+
 
 /* Extras */
 #parallax-scroll .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
@@ -123,4 +158,3 @@ li.dropdown {
 
 section{
   font-family: 'Oswald', sans-serif;
-}
